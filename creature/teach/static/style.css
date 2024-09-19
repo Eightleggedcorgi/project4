@@ -4,6 +4,7 @@ main {
 
 body {
     text-align: center;
+    flex: auto;
 }
 
 footer {
