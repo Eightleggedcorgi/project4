@@ -6,10 +6,12 @@
 
 <div class="card">
     <div class="card-content">
-        
+        <span class="card-title"> <h3> {{ cindex.name }} </h3> </span>
+        <p>Category: {{ cindex.category }} </p>
+        <p>Species: {{ cindex.species }} </p>
+        <p>Conservation Status: {{ cindex.cstatus }} </p>
         <br>
     </div>
-    </a> 
 </div>
 
 {% endfor %} {% endblock %}
