@@ -10,4 +10,5 @@ body {
 footer {
     flex: auto;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
