@@ -5,7 +5,7 @@ from django.urls import reverse
 
 class Creatures(models.Model):
     name = models.CharField(max_length=50)
-    category = models.CharField(max_length=50)
+    #category = models.CharField(max_length=50)
     species = models.CharField(max_length=50)
     cstatus = models.CharField(max_length=50) #Conservation Status
     family = models.CharField(max_length=50)
