@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'creature.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'creature',
+        'NAME': 'creature2',
         'USER': 'postgres',
         'PASSWORD': 'unbigballs'
     }
