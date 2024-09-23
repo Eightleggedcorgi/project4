@@ -19,4 +19,4 @@ class Creatures(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('show', kwargs={'creature2_id': self.id})
+        return reverse('show', kwargs={'creatures_id': self.id})

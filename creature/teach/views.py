@@ -14,3 +14,7 @@ def home(request):
 def index(request):
     beasts = Creatures.objects.all()
     return render(request, 'teach/index.html', {'cindex': beasts})
+
+def creature_detail(request, creatures_id):
+    cdetail = Creatures.objects.get(id=creatures_id)
+    return render(request, 'teach/detail.html', {'cshow': cdetail})
