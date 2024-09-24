@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1> D E L E T E    T H E    F O O L </h1>
+
+<h3>
+    Are you really gonna pulverize little ol innocent
+    <span class="veal-text"> {{object.name}} </span> ?
+</h3>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="YES, ANNIHILATE" class="btn" />
+    <a href="{% url 'show' creatures.id %}">No, I am a coward</a>
+</form>
+
+{% endblock %}

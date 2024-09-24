@@ -18,3 +18,15 @@ def index(request):
 def creature_detail(request, creatures_id):
     cdetail = Creatures.objects.get(id=creatures_id)
     return render(request, 'teach/detail.html', {'cshow': cdetail})
+
+class CreaturesCreate(CreateView):
+    model = Creatures
+    fields = '__all__'
+
+class CreaturesUpdate(UpdateView):
+    model = Creatures
+    fields = '__all__'
+
+class CreaturesDelete(DeleteView):
+    model = Creatures
+    success_url = '/teach/index/'
