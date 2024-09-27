@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creature Teacher</title>
 </head>
-<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+<link rel="stylesheet" type="text/css" href="static/styles.css" />
 
 <body>
 
@@ -16,9 +16,9 @@
 <nav>
     <div class="nav-wrapper">
         <ul class="right">
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'index' %}">Creature Index</a></li>
-            <li><a href="{% url 'create' %}">Add a Creature</a></li>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'index' %}">Creature Index</a>
+            <a href="{% url 'create' %}">Add a Creature</a>
         </ul>
     </div>
 </nav>
@@ -26,7 +26,7 @@
 <main class="container">{% block content %} {% endblock %}</main>
 <footer class="page-footer">
     <div class="right">
-        All Rights Rescinded, &copy; 2024 ME &nbsp;
+        All Rights Reserved, &copy; 2024 ME &nbsp;
     </div>
 </footer>
 
