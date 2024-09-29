@@ -1,12 +1,16 @@
-{% extends 'base.html' %} {% block content %}
+<header>
+    {% extends 'base.html' %} {% block content %}
+</header>
 
 <div class="row">
     <div class="col s6">
         <div class="card">
+            <span class="card-title">
+                <br>
+                <h1> The {{ cshow.name }} </h1>
+                <br>
+            </span>
             <div class="card-content">
-                <span class="card-title">
-                    <h2> {{ cshow.name }} </h2>
-                </span>
                 <div class="dcategory">Category:
                     <h3> {{ cshow.category }} </h3>
                 </div>
@@ -19,8 +23,9 @@
                 <div class="dfamily">Family:
                     <h3> {{ cshow.family }} </h3>
                 </div>
-                <div class="ddescription"> <p> Description:
-                    {{ cshow.description }} </p>
+                <div class="ddescription">
+                    <p> Description:
+                        {{ cshow.description }} </p>
                 </div>
                 <div class="dfound">Found:
                     <h3> {{ cshow.found }} </h3>
@@ -31,10 +36,10 @@
                 <div class="ddiet">Diet:
                     <h3> {{ cshow.diet }} </h3>
                 </div>
-                <div class="card-action">
-                    <a href="{% url 'update' cshow.id %}">Edit</a>
-                    <a href="{% url 'delete' cshow.id %}">Delete</a>
-                </div>
+            </div>
+            <div class="card-action">
+                <a href="{% url 'update' cshow.id %}">Edit</a>
+                <a href="{% url 'delete' cshow.id %}">Delete</a>
             </div>
         </div>
     </div>

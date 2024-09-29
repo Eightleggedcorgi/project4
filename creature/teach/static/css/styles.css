@@ -1,12 +1,52 @@
-body {
+html {
     text-align: center;
+    font-family: 'Lucida Sans', Arial;
 }
 
-/* footer {
-    flex: auto;
-    flex-direction: row;
+body {
+    background-image: linear-gradient(275deg, #73c28b, #2e881c); /*set deg to 270 if lines bother you */
+}
+
+header {
+    display: grid;
+    background-image: linear-gradient(85deg, #2f4680, #28cfb6);
+}
+
+form {
+    
+}
+
+.card-content {
+    display: grid;
+    gap: 40px;
+}
+
+.dcategory {
+    
+}
+
+.dspecies {
+    
+}
+
+.ddescription {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.index {
+    display: inline-grid;
+    padding: 6px;
+}
+
+.index-content {
+    font-size: 15px;
 }
 
 .right {
-    word-spacing: 10px;
-} */
+    margin: 20px 25px 0px 0px;
+}
+
+.copyright {
+    margin: 0px 0px 0px 10px;
+}
