@@ -10,10 +10,10 @@
     <span class="veal-text"> {{object.name}} into fading memories? </span> 
 </h3>
 
-<form action="" method="POST">
+<form action="" method="POST" class="dform">
     {% csrf_token %}
     <input type="submit" value="DELETE" class="btn" />
-    <a href="{% url 'show' creatures.id %}">Go Back</a>
+    <a href="{% url 'show' creatures.id %}"><br>Go Back</a>
 </form>
 <br>
 

@@ -13,6 +13,7 @@ class Creatures(models.Model):
     found = models.CharField(max_length=200)
     size = models.CharField(max_length=100)
     diet = models.CharField(max_length=200)
+    banner = models.ImageField(default='fallback.png', blank=True)
 
 
     def __str__(self):

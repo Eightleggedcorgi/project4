@@ -24,10 +24,8 @@
                 <div class="dfamily">Family:
                     <h3> {{ cshow.family }} </h3>
                 </div>
-                <div class="ddescription">
-                    <p> Description:
-                        {{ cshow.description }} </p>
-                </div>
+                <img class="dbanner" src="{{ cshow.banner.url }}"
+                alt="image not found" />
                 <div class="dfound">Found:
                     <h3> {{ cshow.found }} </h3>
                 </div>
@@ -37,8 +35,13 @@
                 <div class="ddiet">Diet:
                     <h3> {{ cshow.diet }} </h3>
                 </div>
+                <div class="ddescription">
+                    <p> Description:
+                        {{ cshow.description }} </p>
+                </div>
             </div>
             <div class="card-action">
+                <br>
                 <a href="{% url 'update' cshow.id %}">Edit</a>
                 <a href="{% url 'delete' cshow.id %}">Delete</a>
             </div>
